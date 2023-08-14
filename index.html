@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="./index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home </title>
+</head>
+<script>
+    function redirectToAppStore() {
+      var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+      if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = 'https://itunes.apple.com/app/streetgoalzos';
+      } else if (/android/i.test(userAgent)) {
+        window.location.href = 'https://play.google.com/store/apps/details?id=com.StreetGols';
+      }
+    }
+</script>
+<body>
+    <div class="titleLinks" id="desktop">
+        <div class="featuredText" id="phone3">
+            <h1 class="streetgolsTitle" id="phone4"> StreetGols </h1>
+            <h1 class="playanywhereSubTitle" id="phone5">Play Anywhere</h1>
+        </div>
+        <div class="appStoresDiv">
+            <a class="links" href="https://apps.apple.com/us/app/streetgols/id6450515832"><img src="app-store.png" class="store" alt="Google Play Link" /></a>
+            <a class="links" href="https://play.google.com/store/apps/details?id=com.StreetGols"><img src="play-store.png" class="store" alt="Google Play Link" /></a>
+        </div>
+    </div>
+    
+    <div class="titleLinksMOBILE" id="mobile">
+        <div class="featuredTextMOBILE" id="phone3">
+            <h1 class="streetgolsTitleMOBILE" id="phone4"> StreetGols </h1>
+            <h1 class="playanywhereSubTitleMOBILE" id="phone5">Play Anywhere</h1>
+        </div>
+        
+        <div class="appStoresDivMOBILE">
+            <a class="downloadMOBILE" href="#" onclick="redirectToAppStore()" style="text-decoration: none;">DOWNLOAD</a>
+        </div>
+    </div>
+
+
+    <div class="featuredPic">
+        <div class="iphone">
+            <div class="iphone-14">
+              <div class="dynamic-island"></div>
+              <div class="dynamic-island-camera"></div>
+              <img src="./soccer-ball.png" alt="Your Image" class="image-overlay">
+            </div>
+        </div>
+    </div>
+<!-- 
+    <div class="mobileSite" id="mobile">
+        <div class="featuredPic">
+            <div class="iphone">
+                <div class="iphone-14">
+                  <div class="dynamic-island"></div>
+                  <div class="dynamic-island-camera"></div>
+                  <img src="./soccer-ball.png" alt="Your Image" class="image-overlay">
+                </div>
+            </div>
+        </div>
+    </div> -->
+</body>
+
+</html>
